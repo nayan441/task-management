@@ -17,8 +17,8 @@ staticfiles/
 *.pem
 
 # Django migrations
-**/migrations/*.py
-!**/migrations/__init__.py
+# **/migrations/*.py
+# !**/migrations/__init__.py
 
 # IDE and Editor files
 .vscode/
