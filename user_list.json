@@ -1,0 +1,73 @@
+[
+    {
+      "username": "john_doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@yopmail.com",
+      "mobile": "9876543210"
+    },
+    {
+      "username": "jane_smith",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@yopmail.com",
+      "mobile": "8765432109"
+    },
+    {
+      "username": "michael_brown",
+      "first_name": "Michael",
+      "last_name": "Brown",
+      "email": "michael.brown@yopmail.com",
+      "mobile": "7654321098"
+    },
+    {
+      "username": "emily_clark",
+      "first_name": "Emily",
+      "last_name": "Clark",
+      "email": "emily.clark@yopmail.com",
+      "mobile": "6543210987"
+    },
+    {
+      "username": "david_wilson",
+      "first_name": "David",
+      "last_name": "Wilson",
+      "email": "david.wilson@yopmail.com",
+      "mobile": "5432109876"
+    },
+    {
+      "username": "sarah_moore",
+      "first_name": "Sarah",
+      "last_name": "Moore",
+      "email": "sarah.moore@yopmail.com",
+      "mobile": "4321098765"
+    },
+    {
+      "username": "chris_taylor",
+      "first_name": "Chris",
+      "last_name": "Taylor",
+      "email": "chris.taylor@yopmail.com",
+      "mobile": "3210987654"
+    },
+    {
+      "username": "olivia_anderson",
+      "first_name": "Olivia",
+      "last_name": "Anderson",
+      "email": "olivia.anderson@yopmail.com",
+      "mobile": "2109876543"
+    },
+    {
+      "username": "daniel_white",
+      "first_name": "Daniel",
+      "last_name": "White",
+      "email": "daniel.white@yopmail.com",
+      "mobile": "1098765432"
+    },
+    {
+      "username": "sophia_martin",
+      "first_name": "Sophia",
+      "last_name": "Martin",
+      "email": "sophia.martin@yopmail.com",
+      "mobile": "0987654321"
+    }
+  ]
+  

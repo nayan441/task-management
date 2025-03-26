@@ -5,8 +5,6 @@ from . import views
 urlpatterns = [
     path('users', views.UserList.as_view(), name='index'),
     path('users/<int:pk>/', views.GetOrUpdateUser.as_view(), name='index'),
-    # path('users/<int:pk>/', views.update_user, name='index'),
-    # path('users/<int:pk>/', views.delete_user, name='index'),
     
     # path('tasks', views.TaskList.as_view(), name='index'),
     # path('tasks/<int:pk>/', views.TaskList.as_view(), name='index'),

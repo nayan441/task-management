@@ -7,8 +7,8 @@ Ensure you have the following installed:
 
 ## Cloning the Repository
 ```sh
-git clone https://github.com/your-username/your-django-project.git
-cd your-django-project
+git clone https://github.com/nayan441/task-management.git
+cd task-management
 ```
 
 ## Setting Up the Virtual Environment
@@ -18,32 +18,24 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Configuring the Environment Variables
-Copy the `.env.example` file to `.env` and update the necessary values:
-```sh
-cp .env.example .env
-```
-
-## Database Setup
-Run the following commands to apply migrations and create a superuser:
-```sh
-python manage.py makemigrations
-python manage.py migrate
-```
-
 ## Running the Project
 To start the Django development server:
 ```sh
 python manage.py runserver 8000
 ```
+
+## Database Setup(For new database setup)
+Run the following commands to apply migrations and create a superuser:
+```sh
+python manage.py makemigrations task_management
+python manage.py migrate
+```
 ## API Documentetion
-Swagger UI document is integrated. You can access it through below command.
+Swagger UI document is integrated. You can access it through below url.
 ```sh
 http://127.0.0.1:8000/swagger/
 ```
-
-## License
-This project is licensed under the MIT License.
+![Alt Text](assets/localhost_8000_swagger.png)
 
 ## Contact
 For any issues, contact [ynayan93@gmail.com](mailto:ynayan93@gmail.com).

@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
-from .serializers import TaskSerializer, UserSerializer, AssignTaskSerializer
+from .serializers import TaskSerializer, UserSerializer, TaskUpdateSerializer, AssignTaskSerializer
 from .models import Task, User
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
@@ -165,16 +165,17 @@ def create_task(request):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 @swagger_auto_schema(
     method='PATCH',
-    request_body=TaskSerializer,
-    responses={201: TaskSerializer},
+    request_body=TaskUpdateSerializer,
+    responses={201: TaskUpdateSerializer},
     operation_summary="Update task",
     operation_description="Update an existing task"
 )
 @api_view(['PATCH'])
 def update_task(request):
-    serializer = TaskSerializer(data=request.data)
+    serializer = TaskUpdateSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -191,7 +192,7 @@ def update_task(request):
 def get_user_task(request, pk):
     try:
         tasks = Task.objects.filter(users=pk)
-        serializer = TaskSerializer(tasks, many=True)
+        serializer = TaskUpdateSerializer(tasks, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Exception as e:
         return Response({"message": str(e)}, status=status.HTTP_404_NOT_FOUND)
@@ -199,10 +200,7 @@ def get_user_task(request, pk):
      
 @swagger_auto_schema(
     method='post',
-    manual_parameters=[
-        openapi.Parameter('task_id', openapi.IN_QUERY, description="Task ID", type=openapi.TYPE_INTEGER),
-        openapi.Parameter('user_ids', openapi.IN_QUERY, description="List of User IDs", type=openapi.TYPE_ARRAY, items=openapi.Items(type=openapi.TYPE_INTEGER))
-    ],
+    request_body=AssignTaskSerializer,
     operation_summary="Assign task",
     operation_description="Assign a task to one or more users",
     responses={200: "Task assigned successfully"}

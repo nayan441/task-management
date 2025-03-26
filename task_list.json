@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Documents to read",
+      "description": "Need to read documents for POC"
+    },
+    {
+      "name": "Set up development environment",
+      "description": "Install necessary tools and dependencies"
+    },
+    {
+      "name": "Write API documentation",
+      "description": "Document all API endpoints for the project"
+    },
+    {
+      "name": "Optimize database queries",
+      "description": "Improve the performance of SQL queries"
+    },
+    {
+      "name": "Code review",
+      "description": "Review code changes and provide feedback"
+    },
+    {
+      "name": "Fix authentication bug",
+      "description": "Resolve login issue affecting some users"
+    },
+    {
+      "name": "Write unit tests",
+      "description": "Increase test coverage for critical functions"
+    },
+    {
+      "name": "Implement caching",
+      "description": "Introduce Redis for faster data retrieval"
+    },
+    {
+      "name": "Deploy application",
+      "description": "Deploy the latest version to the production server"
+    },
+    {
+      "name": "Prepare demo presentation",
+      "description": "Create slides and demo workflow for stakeholders"
+    }
+  ]
+  
