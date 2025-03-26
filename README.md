@@ -37,7 +37,9 @@ http://127.0.0.1:8000/swagger/
 ```
 ![Alt Text](assets/localhost_8000_swagger.png)
 
-## PDF and Video documentation
+## Text and Video documentation
+
+[Click here to view documentetion](assets/setup_documentetion.png)
 [Click here to watch the video](assets/screen-record-task-management_EO2AsFO1.mkv)
 
 
