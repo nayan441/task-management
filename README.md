@@ -37,6 +37,11 @@ http://127.0.0.1:8000/swagger/
 ```
 ![Alt Text](assets/localhost_8000_swagger.png)
 
+## PDF and Video documentation
+[Click here to watch the video](assets/screen-record-task-management_EO2AsFO1.mkv)
+
+
+
 ## Contact
 For any issues, contact [ynayan93@gmail.com](mailto:ynayan93@gmail.com).
 
